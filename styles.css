@@ -1,0 +1,238 @@
+/*fuente*/
+@font-face {
+    font-family: 'MartianMonoBold';
+    src: url(fonts/MartianMonoNerdFontMono-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/*Animacion*/
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.body-index h1, 
+.body-index h2, 
+.body-index p {
+    animation: fadeUp 0.5s ease forwards;
+}
+
+/* Delay para cada elemento */
+.body-index h1 {
+    animation-delay: 0.1.5s;
+}
+.body-index h2 {
+    animation-delay: 0.2s;
+}
+.body-index p {
+    animation-delay: 0.4s;
+}
+
+/*------------animacion de escritura-------------*/
+/*Animacion Botones*/
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    }
+    50% {
+        box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+.btn {
+    animation: glow 2s infinite alternate;
+}
+/*configuracion base*/
+.body-index {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'MartianMonoBold', monospace;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagen de fondo */
+.body-index:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -2; /* detrás del overlay */
+}
+
+/* Overlay oscuro */
+.body-index:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* negro con 50% opacidad */
+    z-index: -1; /* encima de la imagen pero debajo del texto */
+}
+
+/*contenido principal*/
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-content{
+    flex: 1;
+}
+/*Header*/
+.header{
+    background-color: #07071d;
+    color: #fff;
+    padding: 5px 60px;
+   
+}
+.white{
+    color: rgb(255, 255, 255);
+}
+.learn{
+    color: rgb(18, 168, 5);
+    font-family: '0xprotoMono', monospace;
+}
+.site-title{
+    font-size: 38px;
+    font-weight: bold;
+    margin: 20px 0;
+    font-family: 'MartianMonoBold', monospace;
+    color: rgb(255, 255, 255);
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-text{
+    font-family: '0xprotoMono', monospace;
+    font-size: 38px;
+    text-align:center;
+    margin: 100px 100px;
+    color: chartreuse;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.btn{
+    padding: 12px 25px;
+    font-size: 30px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #00ff00;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-family: '0xprotoMono', monospace;
+}
+.btn.registro{
+    background-color:  rgb(18, 168, 5);
+    color: #07071d;
+}
+/* Botón Iniciar sesión */
+.btn.login {
+    background-color: #07071d   ;
+    color: rgb(252, 252, 252);
+}
+/* Efecto Hover */
+.btn:hover {
+    box-shadow: 0 0 15px violet;
+    transform: scale(1.05);
+}
+footer{
+    background-color: #07071d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*-------------------- BODY REGISTER --------------------*/
+.body-register {
+    background-color: #07071d;
+    color: #ffffff;
+    font-family: '0xprotoMono', monospace;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: fadeUp 0.5s ease forwards;
+}
+.header-register {
+    background-color: #07071d;
+    color: #fff;
+    padding: 5px 60px;
+   position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.register-container {
+    background-color: #1d1d31;
+    padding: 100px;
+    border-radius: 5px;
+    width: 500px;
+    text-align: left;
+}
+.register-container label {
+    display: block;
+    margin-bottom: 8px;;
+    font-size: 22px;
+}
+.register-container input {
+    font-size: 18px;
+    padding: 8px;
+    border: 2px solid #179107;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #141414;
+    caret-color: #179107;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.register-container button {
+    font-size: 20px;
+    padding: 12px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #179107;
+    color: #07071d;
+    cursor: pointer;
+}
+
+.register-container button:hover {
+    background-color: #00ff00;
+    color: #07071d;
+    box-shadow: #179107 0 0 20px;
+    transition: all 0.3s ease;
+}
+.footer-register {
+    background-color: #07071d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+}
