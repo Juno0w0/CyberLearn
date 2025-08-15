@@ -24,7 +24,7 @@
 
 /* Delay para cada elemento */
 .body-index h1 {
-    animation-delay: 0.1.5s;
+    animation-delay: 0.15s;
 }
 .body-index h2 {
     animation-delay: 0.2s;
@@ -101,6 +101,7 @@
 }
 .white{
     color: rgb(255, 255, 255);
+    font-family: 'MartianMono', monospace;
 }
 .learn{
     color: rgb(18, 168, 5);
@@ -143,6 +144,7 @@
     transition: all 0.3s ease;
     text-decoration: none;
     font-family: '0xprotoMono', monospace;
+    
 }
 .btn.registro{
     background-color:  rgb(18, 168, 5);
@@ -235,4 +237,107 @@ footer{
     position: absolute;
     bottom: 2%;
     width: 100%;
+
 }
+/**************************Login CSS****************************/
+.header-login {
+    background-color: #07071d;
+    color: #fff;
+    padding: 5px 60px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté siempre encima */
+}
+
+.body-login {
+    background-color: #07071d;
+    color: #ffffff;
+    font-family: '0xprotoMono', monospace;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 250px; /* Espacio para el header */
+    padding-right: 700px; /* Espacio para el header */
+}
+
+/* Imagen de fondo */
+.body-login:before {
+    content: "";
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/login_sunset.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -2; /* detrás del overlay */
+}
+
+/* Overlay oscuro */
+.body-login:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* negro con 50% opacidad */
+    z-index: -1; /* encima de la imagen pero debajo del texto */
+}
+
+.login-container{
+    animation: fadeUp 0.5s ease forwards;
+    background-color: #0f1733;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #0c5b5e;
+    width: 600px;
+    text-align: left;
+    transform: translateX(-60px);
+}
+.login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+.login-container input {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #179107;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #141414;
+    caret-color: #179107;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.login-container button {
+    font-size: 18px;
+    padding: 12px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #179107;
+    color: #07071d;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #00ff00;
+    color: #07071d;
+    box-shadow: #179107 0 0 20px;
+    transition: all 0.3s ease;
+}
+
+
+
