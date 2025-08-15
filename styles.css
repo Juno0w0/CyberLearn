@@ -16,6 +16,28 @@
         transform: translateY(0);
     }
 }
+
+/*------------animacion de escritura-------------*/
+/*Animacion Botones*/
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    }
+    50% {
+        box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
+    }
+}
+#logo {
+    cursor: pointer;  /* Cambia el cursor a una mano */
+    color: #00ff99;
+    transition: color 0.3s ease;
+}
+
+#logo:hover {
+    color: #00cc7a;
+}
+
+
 .body-index h1, 
 .body-index h2, 
 .body-index p {
@@ -31,17 +53,6 @@
 }
 .body-index p {
     animation-delay: 0.4s;
-}
-
-/*------------animacion de escritura-------------*/
-/*Animacion Botones*/
-@keyframes glow {
-    0%, 100% {
-        box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
-    }
-    50% {
-        box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00;
-    }
 }
 
 .btn {
@@ -179,7 +190,6 @@ footer{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    animation: fadeUp 0.5s ease forwards;
 }
 .header-register {
     background-color: #07071d;
@@ -195,6 +205,7 @@ footer{
     border-radius: 5px;
     width: 500px;
     text-align: left;
+    animation: fadeUp 0.5s ease forwards;
 }
 .register-container label {
     display: block;
@@ -262,7 +273,6 @@ footer{
     align-items: flex-start;
     justify-content: center;
     padding-top: 250px; /* Espacio para el header */
-    padding-right: 700px; /* Espacio para el header */
 }
 
 /* Imagen de fondo */
@@ -299,7 +309,7 @@ footer{
     border: 2px solid #0c5b5e;
     width: 600px;
     text-align: left;
-    transform: translateX(-60px);
+
 }
 .login-container h1 {
     font-size: 24px;
@@ -338,6 +348,24 @@ footer{
     box-shadow: #179107 0 0 20px;
     transition: all 0.3s ease;
 }
-
-
-
+.link-register {
+    color: #b1128e;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.link-register:hover {
+    text-shadow: 0 0 10px #b1128e, 0 0 20px #b1128e, 0 0 40px #b1128e;
+    color: #ff00c8;
+}
+/*footer*/
+.footer-login {
+    position: fixed;       /* Fijo al final de la ventana */
+    bottom: 20px;          /* Separado un poco del borde inferior */
+    width: 100%;           /* Ocupa todo el ancho */
+    text-align: center;    /* Centra el texto */
+    color: #ffffff;        /* Color del texto */
+    font-size: 19px;
+    background: none;      /* Sin fondo */
+    border: none;          /* Sin borde */
+    pointer-events: none;  /* Para que no interfiera con clicks */
+}
