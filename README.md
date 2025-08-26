@@ -16,6 +16,4 @@ El objetivo es que los usuarios puedan practicar, mejorar y medir sus conocimien
 
 ## 🖼️ Vista previa
 
-
-```html
 ![Captura de CyberLearn](./assets/images/Screenshoot.png)
