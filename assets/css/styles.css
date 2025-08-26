@@ -472,3 +472,76 @@ footer{
     border: #000000 2px solid;
     box-shadow: #00ff99 0 0 10px;
 }
+.circle-progress {
+  width: 150px;
+  height: 150px;
+  margin: 20px auto;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 3.8;
+}
+
+.progress {
+  fill: none;
+  stroke: #4caf50;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+.percentage {
+  font-size: 0.5em;
+  text-anchor: middle;
+  fill: #333;
+}
+/* Barra de búsqueda */
+.search-bar {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 20px;
+    border: 2px solid #000000;
+    background-color: #042747;
+}
+.search-bar input {
+    flex: 1;
+    max-width: 400px;
+    min-width: 100px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #179107;
+    border-radius: 5px;
+    outline: none;
+    background-color: #141414;
+    color: #ffffff;
+    caret-color: #179107;
+}
+.search-bar input:hover {
+    border-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+    transition: all 0.3s ease;
+}
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #179107;
+    color: #07071d;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.search-bar button:hover {
+    background-color: #00ff00;
+    color: #07071d;
+    box-shadow: #179107 0 0 20px;
+    transition: all 0.3s ease;
+}
