@@ -214,6 +214,8 @@ footer{
     border: 2px solid #0c5b5e;
     width: 600px;
     text-align: left;
+    overflow: hidden;
+    position: fixed;
 }
 .form-register h1 {
     font-size: 24px;
@@ -252,6 +254,14 @@ footer{
     box-shadow: #179107 0 0 20px;
     transition: all 0.3s ease;
 }    
+.passwordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
 /**************************Login CSS****************************/
 .header-login {
     background-color: #07071d;
@@ -262,6 +272,7 @@ footer{
     left: 0;
     width: 100%;
     z-index: 1000; /* Asegura que el header esté siempre encima */
+
 }
 
 .body-login {
@@ -275,6 +286,9 @@ footer{
     align-items: flex-start;
     justify-content: center;
     padding-top: 250px; /* Espacio para el header */
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
 /* Imagen de fondo */
